@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación La Capitana - Remedios del Valle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#202F79',
+                        background: '#F2F2F2',
+                        textDark: '#0F142F',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background text-textDark font-sans antialiased">
+
+    <!-- Navegación -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo Space -->
+                <div class="flex min-w-0 flex-1 items-center">
+                    <img
+                        class="site-logo"
+                        src="assets/img/logo.png"
+                        alt="Fundación La Capitana — María Remedios del Valle"
+                    >
+                </div>
+                <!-- Links & Button -->
+                <div class="flex shrink-0 items-center gap-2 sm:gap-8">
+                    <a href="#institucional" class="hover:text-primary transition font-medium hidden md:block">Institucional</a>
+                    <a href="#objetivos" class="hover:text-primary transition font-medium hidden md:block">Objetivos</a>
+                    <button id="openModalBtn" class="bg-primary text-white px-3 sm:px-6 py-2 rounded-md hover:bg-opacity-90 transition font-semibold shadow-lg">
+                        Donaciones
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section pt-32 pb-20 text-white">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Fundación La Capitana <br> <span class="text-2xl md:text-3xl font-normal opacity-90">MN 2345 | Remedios del Valle</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl max-w-3xl mx-auto font-light leading-relaxed">
+                Promover la formación, el trabajo y el desarrollo productivo para mejorar la calidad de vida de los chaqueños y las chaqueñas.
+            </p>
+            <div class="mt-10">
+                <a href="#institucional" class="bg-white text-primary px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition shadow-lg">
+                    Conocer más
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Misión y Visión -->
+    <section id="institucional" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Misión -->
+                <div class="bg-white p-10 rounded-xl shadow-sm border-t-4 border-primary">
+                    <h2 class="text-3xl font-bold text-primary mb-4">Nuestra Misión</h2>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Brindar oportunidades de capacitación profesional en oficios y salud, impulsando el empleo, el emprendimiento y el crecimiento personal.
+                    </p>
+                </div>
+                <!-- Visión -->
+                <div class="bg-white p-10 rounded-xl shadow-sm border-t-4 border-primary">
+                    <h2 class="text-3xl font-bold text-primary mb-4">Nuestra Visión</h2>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Ser una institución referente en el Chaco y el país en formación profesional, generación de trabajo y desarrollo de proyectos productivos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section id="objetivos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary">Objetivos Institucionales</h2>
+                <p class="mt-4 text-lg text-gray-600">Nuestro compromiso con la sociedad</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card -->
+                <div class="p-6 bg-background rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-primary">Capacitación</h3>
+                    <p class="text-gray-700">Capacitar para el trabajo y el autoempleo mediante cursos de oficios y salud.</p>
+                </div>
+                <!-- Card -->
+                <div class="p-6 bg-background rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-primary">Igualdad</h3>
+                    <p class="text-gray-700">Promover la igualdad de oportunidades para todos los chaqueños.</p>
+                </div>
+                <!-- Card -->
+                <div class="p-6 bg-background rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-primary">Emprendimientos</h3>
+                    <p class="text-gray-700">Impulsar emprendimientos y proyectos de servicios y productivos.</p>
+                </div>
+                <!-- Card -->
+                <div class="p-6 bg-background rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-primary">Desarrollo Territorial</h3>
+                    <p class="text-gray-700">Fortalecer el desarrollo social, económico y la producción local.</p>
+                </div>
+                <!-- Card -->
+                <div class="p-6 bg-background rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-primary">Alianzas</h3>
+                    <p class="text-gray-700">Generar alianzas estratégicas con universidades, empresas, sindicatos y cooperativas.</p>
+                </div>
+                <!-- Card -->
+                <div class="p-6 bg-background rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-primary">Orientación Legal</h3>
+                    <p class="text-gray-700">Acompañar y orientar facilitando información dentro del marco legal vigente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-textDark text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h4 class="text-2xl font-bold mb-4">Fundación La Capitana</h4>
+            <p class="mb-2 italic">"Formar para trabajar. Capacitar para crecer. Gestionar para generar oportunidades."</p>
+            <p class="font-bold text-primary bg-white inline-block px-4 py-1 rounded mt-4">FACTA NON VERBA — Hechos, no palabras.</p>
+            <div class="mt-8 text-sm text-gray-400">
+                &copy; <span id="year"></span> Fundación La Capitana. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox / Modal Donaciones -->
+    <div id="donationModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-textDark bg-opacity-70 backdrop-blur-sm" id="modalBackdrop"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-white rounded-xl shadow-2xl p-8 max-w-md w-full animate-fade-in-up">
+            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-400 hover:text-textDark transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <h3 class="text-2xl font-bold text-primary mb-2 text-center">Colaborá con nosotros</h3>
+            <p class="text-gray-600 text-center mb-8">Tu aporte nos ayuda a seguir generando oportunidades de trabajo y capacitación.</p>
+            
+            <div class="space-y-4">
+                <!-- Opción Nacional -->
+                <a href="#" target="_blank" class="flex items-center justify-between w-full p-4 border border-gray-200 rounded-lg hover:border-primary hover:bg-background transition group">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-blue-100 text-blue-800 p-2 rounded-full font-bold">AR$</div>
+                        <span class="font-semibold text-textDark">Aporte Nacional</span>
+                    </div>
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+                
+                <!-- Opción Internacional -->
+                <a href="#" target="_blank" class="flex items-center justify-between w-full p-4 border border-gray-200 rounded-lg hover:border-primary hover:bg-background transition group">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-green-100 text-green-800 p-2 rounded-full font-bold">U$D</div>
+                        <span class="font-semibold text-textDark">Aporte Internacional</span>
+                    </div>
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
